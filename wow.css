@@ -1,0 +1,68 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --Headings-font-family: 'Poppins', sans-serif;
+  --Body-font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Violet) url(images/bg-desktop.svg) no-repeat;
+  background-size: cover;
+  padding: 3rem 3rem 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  margin-bottom: 5rem;
+}
+
+.mockups img {
+  width: 55rem;
+  margin-right: 4rem;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  height: 36rem;
+}
+
+.Text h1 {
+  font: 3.4rem var(--Headings-font-family);
+  color: white;
+}
+
+.Text p {
+  font: 1.45rem var(--Body-font-family);
+  color: white;
+  margin: 35px 0;
+}
+
+.Text button {
+  width: 14rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.30rem;
+  color: #674baf;
+  box-shadow: 4px 10px 20px 0px #00000054;
+  transition: .3s;
+}
+
+.Text button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--Soft-Magenta);
+}
